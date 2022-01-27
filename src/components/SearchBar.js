@@ -2,12 +2,12 @@ import React from "react";
 // Styling
 
 
-const SearchBar = (props) => {
+const SearchBar = ({setQuery}) => {
 
   const checkLength = (string) => {
     if (string.length >= 2)
-      props.setQuery(string)
-    else props.setQuery("")
+      setQuery(string)
+    else setQuery("")
   }
 
   return (
