@@ -1,7 +1,6 @@
 
 
-const ProductItem = (props) => {
-  const product = props.product;
+const ProductItem = ({product}) => {
 
   return (
     <div className="productWrapper" onClick={() => props.setCookie(product)}>
